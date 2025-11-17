@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "llm-uncertainty-estimation"
+version = "0.1.0"
+description = ""
+authors = ["pakhapoom <pakhapoom.sar@gmail.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+ipykernel = "^6.29.3"
+jieba = "^0.42.1"
+evaluate = "^0.4.3"
+sentence-transformers = "^5.1.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.3"
+
+
+[tool.poetry.group.experiments.dependencies]
+pandas = "^2.2.1"
+openai = "^1.16.0"
+pdfplumber = "^0.11.0"
+unstructured = "^0.13.3"
+langchain = "^0.1.16"
+together = "^1.1.5"
+anthropic = "^0.25.9"
+langid = "^1.1.6"
+openpyxl = "^3.1.4"
+tiktoken = "^0.7.0"
+transformers = "^4.42.3"
+huggingface-hub = "^0.23.4"
+torch = "^2.3.1"
+datasets = "^2.20.0"
+scipy = "^1.14.0"
+asyncio = "^3.4.3"
+pythainlp = "^5.0.4"
+python-crfsuite = "^0.9.10"
+fasttext = "^0.9.3"
+scikit-learn = "^1.5.1"
+accelerate = "^0.34.2"
+vllm = "^0.6.2"
+python-dotenv = "^1.1.1"
+
+[tool.poetry.group.visualizations.dependencies]
+seaborn = "^0.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
